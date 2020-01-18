@@ -13,7 +13,7 @@ namespace Lab4_5_Figure_Factory.Class
         }
 
         //Fields
-        private readonly double side;
+        private double side;
 
         //Properties
         public double Perimeter { get { return side * 4; } }
@@ -23,6 +23,16 @@ namespace Lab4_5_Figure_Factory.Class
         public override string ToString()
         {
             return String.Format("Kwadrat: {0}", side);
+        }
+
+        public void Increase()
+        {
+            side = Math.Sqrt(Field * 2);
+        }
+
+        public void Decrease()
+        {
+            side = Math.Sqrt(Field / 2);
         }
     }
 }

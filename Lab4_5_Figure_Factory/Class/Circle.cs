@@ -13,7 +13,7 @@ namespace Lab4_5_Figure_Factory.Class
         }
 
         //Fields
-        private readonly double radius;
+        private double radius;
 
         //Properties
         public double Perimeter { get { return 2 * Math.PI * radius; } }
@@ -23,6 +23,16 @@ namespace Lab4_5_Figure_Factory.Class
         public override string ToString()
         {
             return String.Format("Koło: {0}", radius);
+        }
+
+        public void Increase()
+        {
+            radius = Math.Sqrt((2 * Field )/ Math.PI);
+        }
+
+        public void Decrease()
+        {
+            radius = Math.Sqrt((Field / 2 )/ Math.PI);
         }
     }
 }

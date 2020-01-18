@@ -8,5 +8,8 @@ namespace Lab4_5_Figure_Factory
     {
         public double Perimeter { get; }
         public double Field { get; }
+
+        void Increase();
+        void Decrease();
     }
 }

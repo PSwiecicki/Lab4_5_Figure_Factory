@@ -14,8 +14,8 @@ namespace Lab4_5_Figure_Factory.Class
         }
 
         //Fields
-        private readonly double sideA;
-        private readonly double sideB;
+        private double sideA;
+        private double sideB;
 
         //Properties
         public double Perimeter { get { return (sideA + sideB) * 2; } }
@@ -25,6 +25,16 @@ namespace Lab4_5_Figure_Factory.Class
         public override string ToString()
         {
             return String.Format("Prostokąt: {0}, {1}", sideA, sideB);
+        }
+
+        public void Increase()
+        {
+            sideB *= 2;
+        }
+
+        public void Decrease()
+        {
+            sideB /= 2;
         }
     }
 }
