@@ -22,7 +22,7 @@ namespace Lab4_5_Figure_Factory.Class
         //Methods
         public override string ToString()
         {
-            return String.Format("Kwadrat: {0}", side);
+            return String.Format("Kwadrat: {0}", side.ToString("F2"));
         }
 
         public void Increase()

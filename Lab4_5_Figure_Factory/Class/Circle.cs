@@ -22,7 +22,7 @@ namespace Lab4_5_Figure_Factory.Class
         //Methods
         public override string ToString()
         {
-            return String.Format("Koło: {0}", radius);
+            return String.Format("Koło: {0}", radius.ToString("F2"));
         }
 
         public void Increase()

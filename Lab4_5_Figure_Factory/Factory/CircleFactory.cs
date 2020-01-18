@@ -10,7 +10,7 @@ namespace Lab4_5_Figure_Factory.Factory
         public override IFigure Create()
         {
             Random rand = new Random();
-            return new Circle((0.1 + rand.NextDouble()) * rand.Next(1, 11));
+            return new Circle((0.1 + rand.NextDouble()) * rand.Next(1, 101));
         }
 
         public IFigure Create(double r)

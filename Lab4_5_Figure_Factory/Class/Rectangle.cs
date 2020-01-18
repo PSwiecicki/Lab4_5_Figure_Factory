@@ -24,7 +24,7 @@ namespace Lab4_5_Figure_Factory.Class
         //Methods
         public override string ToString()
         {
-            return String.Format("Prostokąt: {0}, {1}", sideA, sideB);
+            return String.Format("Prostokąt: {0}, {1}", sideA.ToString("F2"), sideB.ToString("F2"));
         }
 
         public void Increase()
