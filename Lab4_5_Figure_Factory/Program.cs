@@ -31,4 +31,28 @@ namespace Lab4_5_Figure_Factory
             return String.Format("Kwadrat: {0}", side); 
         }
     }
+
+    class Rectangle
+    {
+        //Constructors
+        public Rectangle(double a, double  b)
+        {
+            sideA = a;
+            sideB = b;
+        }
+
+        //Fields
+        private double sideA;
+        private double sideB;
+
+        //Properties
+        public double perimeter { get { return (sideA + sideB) * 2; } }
+        public double field { get { return sideA * sideB; } }
+
+        //Methods
+        public override string ToString()
+        {
+            return String.Format("Prostokąt: {0}, {1}", sideA, sideB);
+        }
+    }
 }
