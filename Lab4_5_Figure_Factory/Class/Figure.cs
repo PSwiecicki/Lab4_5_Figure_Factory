@@ -17,20 +17,7 @@ namespace Lab4_5_Figure_Factory.Class
 
         public IFigure Create(Dict a)
         {
-            FigureFactory factory = null;
-            switch(a)
-            {
-                case Dict.CreateSquare:
-                    factory = new SquareFactory();
-                    break;
-                case Dict.CreateRectangle:
-                    factory = new RectangleFactory(); 
-                    break;
-                case Dict.CreateCircle:
-                    factory = new CircleFactory();
-                    break;
-            }
-            return factory.Create();
+            return FabricDictionary[a].Create();
         }
     }
 
